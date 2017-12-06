@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{875A85E1-CAB5-451B-9752-7357CC9377F7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RimacSeguros</RootNamespace>
+    <AssemblyName>RimacSeguros</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Asesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Asesor.Designer.cs">
+      <DependentUpon>Asesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente.Designer.cs">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="iTalk Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Poliza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Poliza.Designer.cs">
+      <DependentUpon>Poliza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashScreem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreem.Designer.cs">
+      <DependentUpon>SplashScreem.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Asesor.resx">
+      <DependentUpon>Asesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente.resx">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Poliza.resx">
+      <DependentUpon>Poliza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SplashScreem.resx">
+      <DependentUpon>SplashScreem.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sin título.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sin título1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\min1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagen6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wwe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Registrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mostrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modificar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documentos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\presupuesto-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\declaracion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boletas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Registrar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boletas2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buscar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\declaracion2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documentos2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eliminar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modificar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mostrar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\presupuesto-icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magen4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magen5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soli.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soli2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pasiente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pasiente2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magen6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magen7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BLOG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BLOG2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
